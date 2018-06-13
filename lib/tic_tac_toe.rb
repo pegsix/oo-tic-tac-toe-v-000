@@ -105,6 +105,15 @@ WIN_COMBINATIONS = [
         end
         return false
       end
+      
+      def over?
+        win = won?
+        draw = draw?
+        if win != false || draw == true
+          return true
+        end
+        return false
+      end
 
 end
 
@@ -118,14 +127,7 @@ end
 
 #
 #
-# def over?(board)
-#   win = won?(board)
-#   draw = draw?(board)
-#   if win != false || draw == true
-#     return true
-#   end
-#   return false
-# end
+
 # <<<<<<< HEAD
 #
 # def winner(board)
