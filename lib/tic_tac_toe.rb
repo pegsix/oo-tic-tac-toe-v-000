@@ -47,7 +47,7 @@ WIN_COMBINATIONS = [
        end
        counter
      end
-    
+
 end
 
 
@@ -148,7 +148,7 @@ end
 # end
 #
 #
-# 
+#
 #
 # def current_player(board)
 #   counter = turn_count(board)
