@@ -47,7 +47,7 @@ WIN_COMBINATIONS = [
        end
        counter
      end
-     
+
      def current_player
        counter = turn_count
        if  counter % 2 == 0
