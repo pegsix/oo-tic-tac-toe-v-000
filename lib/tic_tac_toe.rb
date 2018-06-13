@@ -2,7 +2,7 @@ class TicTacToe
   def initialize(board = [" ", " ", " ", " ", " ", " ", " ", " ", " "])
     @board = board
   end
-  
+
 WIN_COMBINATIONS = [
   [0,1,2], # Top row win_combination[0]
   [3,4,5],  # Middle row win_combination[1]
