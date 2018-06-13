@@ -105,7 +105,7 @@ WIN_COMBINATIONS = [
         end
         return false
       end
-      
+
       def over?
         win = won?
         draw = draw?
