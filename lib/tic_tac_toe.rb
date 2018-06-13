@@ -102,7 +102,7 @@ end
 # end
 #
 #
-# 
+#
 #
 #
 # def position_taken?(board, location)
