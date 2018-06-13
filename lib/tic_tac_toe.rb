@@ -124,7 +124,17 @@ WIN_COMBINATIONS = [
          winner
         end
       end
-
+      def play
+          until over?
+            turn
+         end
+         if won?
+           puts "Congratulations #{winner}!"
+         end
+         if draw?
+           puts "Cat's Game!"
+         end
+      end
 end
 
 
@@ -142,17 +152,7 @@ end
 #
 #
 #
-# def play(board)
-#     until over?(board)
-#       turn(board)
-#    end
-#    if won?(board)
-#      puts "Congratulations #{winner(board)}!"
-#    end
-#    if draw?(board)
-#      puts "Cat's Game!"
-#    end
-# end
+# 
 #
 #
 #
