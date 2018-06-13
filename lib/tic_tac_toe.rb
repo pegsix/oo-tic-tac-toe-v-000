@@ -88,6 +88,15 @@ WIN_COMBINATIONS = [
         end
          return false
       end
+      
+      def full?
+        if board.include?(" ") == true
+          return false
+        else
+          return true
+        end
+      end
+
 
 end
 
@@ -97,13 +106,6 @@ end
 # end
 #
 
-# def full?(board)
-#   if board.include?(" ") == true
-#     return false
-#   else
-#     return true
-#   end
-# end
 #
 
 #
