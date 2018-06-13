@@ -26,7 +26,7 @@ WIN_COMBINATIONS = [
      !(board[index].nil? || board[index] == " ")
    end
   #
-  
+
 end
 
 # def display_board(board)
