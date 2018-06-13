@@ -90,7 +90,7 @@ WIN_COMBINATIONS = [
       end
 
       def full?
-        if board.include?(" ") == true
+        if @board.include?(" ") == true
           return false
         else
           return true
