@@ -37,6 +37,17 @@ WIN_COMBINATIONS = [
     def valid_move?(index)
      index.between?(0,8) && !position_taken?(index)
     end
+
+    def turn_count
+       counter = 0
+       @board.each do |space|
+         if space != " "
+           counter += 1
+         end
+       end
+       counter
+     end
+    
 end
 
 
@@ -137,15 +148,7 @@ end
 # end
 #
 #
-# def turn_count(board)
-#   counter = 0
-#   board.each do |space|
-#     if space != " "
-#       counter += 1
-#     end
-#   end
-#   counter
-# end
+# 
 #
 # def current_player(board)
 #   counter = turn_count(board)
