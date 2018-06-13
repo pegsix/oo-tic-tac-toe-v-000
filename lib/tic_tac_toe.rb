@@ -57,6 +57,21 @@ WIN_COMBINATIONS = [
         end
       end
 
+      def turn
+        puts "Please enter 1-9:"
+        user_input = gets.strip
+        index = input_to_index(user_input)
+        player_token = current_player
+        if !valid_move?(index)
+          puts "invalid"
+          puts "Please enter 1-9:"
+          user_input = gets.strip
+        else
+          move(index, player_token)
+          display_board
+        end
+      end
+
 
 end
 
@@ -130,20 +145,6 @@ end
 #
 #
 #
-# def turn(board)
-#   puts "Please enter 1-9:"
-#   user_input = gets.strip
-#   index = input_to_index(user_input)
-#   player_token = current_player(board)
-#   if !valid_move?(board, index)
-#     puts "invalid"
-#     puts "Please enter 1-9:"
-#     user_input = gets.strip
-#   else
-#     move(board, index, player_token)
-#     display_board(board)
-#   end
-# end
 #
 # def play(board)
 #     until over?(board)
