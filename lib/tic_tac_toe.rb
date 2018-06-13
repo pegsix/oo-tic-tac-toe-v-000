@@ -14,7 +14,7 @@ WIN_COMBINATIONS = [
   [2,4,6]  # 2nd diagonal win_combination[7]
 ]
 
-  def display_board
+  def @board
     puts " #{board[0]} | #{board[1]} | #{board[2]} "
     puts "-----------"
     puts " #{board[3]} | #{board[4]} | #{board[5]} "
@@ -22,10 +22,10 @@ WIN_COMBINATIONS = [
     puts " #{board[6]} | #{board[7]} | #{board[8]} "
   end
 
-  def position_taken?(board, index)
-     !(board[index].nil? || board[index] == " ")
-   end
-  #
+  # def position_taken?(board, index)
+  #    !(board[index].nil? || board[index] == " ")
+  #  end
+  # #
 
 end
 
