@@ -115,31 +115,22 @@ WIN_COMBINATIONS = [
         return false
       end
 
+      def winner
+        if !won?
+         return nil
+        else
+         winner_index = won?[0]
+         winner = @board[winner_index]
+         winner
+        end
+      end
+
 end
 
 
-# def position_taken?(board, index)
-#   !(board[index].nil? || board[index] == " ")
-# end
-#
 
 #
 
-#
-#
-
-# <<<<<<< HEAD
-#
-# def winner(board)
-#   if !won?(board)
-#    return nil
-#   else
-#    winner_index = won?(board)[0]
-#    winner = board[winner_index]
-#    winner
-#   end
-# end
-#
 #
 #
 # def position_taken?(board, location)
